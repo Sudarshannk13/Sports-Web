@@ -7,7 +7,7 @@ import cardImg2 from "../../src/assets/Images/card-img-2.png";
 import cardImg3 from "../../src/assets/Images/card-img-3.png";
 import FixtureComp from "./otherComponents/FixtureComp";
 import PhotoGallery from "./otherComponents/PhotoGallery";
-// import News from "./otherComponents/News";
+import Sponsers from "./otherComponents/Sponsers";
 
 function Home() {
   return (
@@ -122,6 +122,7 @@ function Home() {
         {/* <News /> */}
 
         <PhotoGallery />
+        <Sponsers />
       </div>
     </>
   );
