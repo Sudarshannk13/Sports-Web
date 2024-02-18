@@ -77,20 +77,21 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row className="lightbg pt-2">
-          <Col xs={6} md={6} className="d-flex">
-            COPYRIGHT{" "}
-            <span>
-              {" "}
-              <p className="mx-1">&copy;</p>
-            </span>
-            {"  "}
-            MYJ Sports LLP 2024-25
+      {/* copyright */}
+      <Container fluid>
+        <Row className="lightbg pt-2 align-items-center ">
+          <Col
+            xs={12}
+            md={6}
+            className="d-flex justify-content-center align-items-center"
+          >
+            <p className="text-center">
+              COPYRIGHT <span>&copy;</span> MYJ Sports LLP 2024-25
+            </p>
           </Col>
-          <Col xs={6} md={6} className="d-flex">
-            <p>Follow Us</p>
-            <a href="#" className="me-2">
+          <Col xs={12} md={6} className="d-flex justify-content-center ">
+            <p>Follow Us :</p>
+            <a href="#" className="mx-2">
               <FontAwesomeIcon
                 icon={faInstagram}
                 style={{ color: "#000000" }}
