@@ -43,11 +43,11 @@ function Header() {
           isScrolled ? "d-none" : ""
         }`}
       >
-        <div className="col-6 media-left">
+        <div className="col-md-6 media-left">
           <p>Official website of Myj Football Club</p>
         </div>
-        <div className="col-4 media-right d-flex justify-content-even align-items-center">
-          <div class="col-3">
+        <div className="col-md-4 media-right d-flex justify-content-even align-items-center">
+          <div className="col-md-3">
             <a href="#" className="me-2">
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -73,7 +73,7 @@ function Header() {
               />
             </a>
           </div>
-          <div class="col-4">
+          <div className="col-md-4">
             <a>
               Contact Us{" "}
               <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#000000" }} />{" "}
@@ -125,7 +125,7 @@ function Header() {
             </Nav>
             {isScrolled && (
               <div className="search-icon">
-                <FontAwesomeIcon icon={faSearch} style={{ color: "#FFFFFF" }} />
+                <FontAwesomeIcon icon={faSearch} style={{ color: "#FFFFFF" }} className="me-2" />
               </div>
             )}
             {!isScrolled && <img src={scLogo} alt="" className="img-fluid" />}
