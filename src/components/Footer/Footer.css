@@ -14,4 +14,10 @@
 
 .darkbg {
   background-color: black;
+  color: #B2B2B2;
+}
+
+.lightbg {
+  background-color: #d9d9d9;
+  color: black;
 }

@@ -2,11 +2,18 @@ import React from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTwitter,
+  faLinkedinIn,
+  faYoutube,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <footer className="py-5 darkbg text-white">
+    <footer className=" darkbg text-white">
       <Container className="p-5">
         <Row className="mb-5">
           {/* Section 1: About Us */}
@@ -67,6 +74,46 @@ function Footer() {
                 </Form.Label>
               </Form.Group>
             </Form>
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <Row className="lightbg pt-2">
+          <Col xs={6} md={6} className="d-flex">
+            COPYRIGHT{" "}
+            <span>
+              {" "}
+              <p className="mx-1">&copy;</p>
+            </span>
+            {"  "}
+            MYJ Sports LLP 2024-25
+          </Col>
+          <Col xs={6} md={6} className="d-flex">
+            <p>Follow Us</p>
+            <a href="#" className="me-2">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ color: "#000000" }}
+              />
+            </a>
+            <a href="#" className="me-2">
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                style={{ color: "#000000" }}
+              />
+            </a>
+            <a href="#" className="me-2">
+              <FontAwesomeIcon icon={faTwitter} style={{ color: "#000000" }} />
+            </a>
+            <a href="#" className="me-2">
+              <FontAwesomeIcon icon={faYoutube} style={{ color: "#000000" }} />
+            </a>
+            <a href="#" className="me-2">
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                style={{ color: "#000000" }}
+              />
+            </a>
           </Col>
         </Row>
       </Container>
